@@ -15,7 +15,11 @@ public class AddToCart {
         driver.get("https://www.amazon.com");
         driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Alexa", Keys.ENTER);
 
+
         Thread.sleep(2000);
+
+        driver.findElement
+                (By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")).click();
 
     }
 }
