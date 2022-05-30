@@ -16,10 +16,13 @@ public class AddToCart {
         driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Alexa", Keys.ENTER);
 
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         driver.findElement
                 (By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")).click();
 
+        driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+        driver.findElement(By.xpath("(//input[@class='a-button-input'])[59]")).click();
     }
+
 }
