@@ -2,6 +2,7 @@ package GoogleEmail;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -17,7 +18,8 @@ public class Email {
 
      Thread.sleep(3000);
      driver.findElement(By.xpath("//a[@data-action='sign in']")).click();
-
+     driver.findElement(By.xpath("//input[@type='email']")).
+             sendKeys("ayselsari91@gmail.com", Keys.ENTER);
 
 
       //  driver.quit();
